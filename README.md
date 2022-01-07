@@ -1,0 +1,1 @@
+# Measure page in pixels
