@@ -1,0 +1,21 @@
+{
+	// Place your snippets for html here. Each snippet is defined under a snippet name and has a prefix, body and
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the
+	// same ids are connected.
+	"html template": {
+		"prefix": "!!",
+		"body": [
+			"<!DOCTYPE html>\n<html lang=\"en\">\n",
+			"<head>\n  <meta charset=\"UTF-8\">",
+			"  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, minimum-scale=1\">\n",
+			"  <link rel=\"stylesheet\" href=\"style.css\">",
+			"${2:  <script src=\"script.js\" defer></script>\n}${3:  <script src=\"app.js\" type=\"module\"></script>\n}",
+			"  <title>${1:Yet to be named...}</title>",
+			"</head>\n\n<body>\n  <div id=\"wrapper\">",
+			"    ${4}",
+			"  </div>",
+			"</body>\n\n</html>"
+		]
+	}
+}

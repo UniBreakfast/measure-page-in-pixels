@@ -1,6 +1,10 @@
 body {
   margin: 0;
   overflow: hidden;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+  color: grey;
 }
 
 #wrapper {
@@ -9,8 +13,22 @@ body {
   overflow: hidden;
 }
 
-#wrapper div {
+.y {
   display: flex;
   justify-content: end;
+  align-content: flex-end;
+  text-align: center;
+  line-height: 10px;
   align-items: end;
+  color: white;
+  background-color: grey;
+}
+
+.x {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  text-align: right;
+  line-height: 10px;
+  white-space: pre;
 }
