@@ -15,20 +15,19 @@ body {
 
 .y {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   align-content: flex-end;
   text-align: center;
   line-height: 10px;
-  align-items: end;
+  align-items: flex-end;
   color: white;
   background-color: grey;
 }
 
 .x {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
   text-align: right;
   line-height: 10px;
-  white-space: pre;
 }

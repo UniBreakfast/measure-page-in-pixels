@@ -1,15 +1,14 @@
+'use strict'
 fillWithSizeCells(wrapper, 50)
-
-onresize = () => fillWithSizeCells(wrapper, 50)
+onresize = function () { fillWithSizeCells(wrapper, 50) }
 
 function fillWithSizeCells(containerEl, size) {
   const rowCount = Math.ceil(innerHeight / size)
   const columnCount = Math.ceil(innerWidth / size)
-  const divStyle = { width: size + 'px', height: size + 'px' }
-  const containerStyle = { width: columnCount * size + 'px', height: rowCount * size + 'px' }
 
-  containerEl.replaceChildren()
-  Object.assign(containerEl.style, containerStyle)
+  containerEl.innerHTML = ''
+  containerEl.style.width = columnCount * size + 'px'
+  containerEl.style.height = rowCount * size + 'px'
 
   for (let i = 0; i < rowCount; i++) {
     for (let j = 0; j < columnCount; j++) {
@@ -21,8 +20,8 @@ function fillWithSizeCells(containerEl, size) {
         div.innerText = 'x:\n' + (j + 1) * size + '\npx'
         div.classList.add('x')
       }
-      Object.assign(div.style, divStyle)
-      containerEl.append(div)
+      div.style.width = div.style.height = size + 'px'
+      containerEl.appendChild(div)
     }
   }
 }
